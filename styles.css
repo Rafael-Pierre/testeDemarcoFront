@@ -62,14 +62,16 @@ body {
 
 .inputs {
   display: flex;
-  flex-direction: row;
-  padding: 10px;
+  flex-direction: column;
+  padding: 15px;
   margin-bottom: 30px;
   position: relative;
 }
 
-.inputs label {
-  width: 100px;
+.inputs input{
+    border-radius: 13px;
+    height: 20px;
+    padding: 5px;
 }
 
 /* Estilo para os botões */
