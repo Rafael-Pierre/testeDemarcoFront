@@ -1,0 +1,201 @@
+html,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.valid {
+  border: 2px solid green;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+#btnSubmit {
+  background-color: #008cba;
+  color: white;
+  padding: 10px;
+  border: 2px solid #008cba;
+  cursor: pointer;
+
+  border-radius: 12px;
+}
+
+#btnSubmit:hover {
+  background-color: white;
+  border: 2px solid #008cba;
+  color: #008cba;
+}
+
+#btnLimpar {
+  background-color: #e7e7e7;
+  color: black;
+  border: 2px solid #e7e7e7;
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: 12px;
+}
+
+#btnLimpar:hover {
+  background-color: white;
+  border: 2px solid #e7e7e7;
+}
+
+#formcadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_inputs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.inputs label {
+  width: 100px;
+}
+
+/* Estilo para os botões */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.redButton {
+  background-color: #dc3545;
+  color: white;
+
+  border: 2px solid #dc3545;
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: 12px;
+}
+
+.redButton:hover {
+  background-color: white;
+  border: 2px solid #dc3545;
+  color: #dc3545;
+}
+
+.btnConfirmar {
+  background-color: #28a745;
+  color: white;
+
+  border: 2px solid #28a745;
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: 12px;
+}
+
+.btnConfirmar:hover {
+  background-color: white;
+  border: 2px solid #28a745;
+  color: #28a745;
+}
+
+.btnAlterar {
+  background-color: #555555;
+  color: white;
+
+  border: 2px solid #555555;
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: 12px;
+}
+
+.btnAlterar:hover {
+  background-color: white;
+  border: 2px solid #555555;
+  color: #555555;
+}
+
+/* Estilo para o popup */
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+span.erro {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  color: #dc3545;
+  font-size: 0.9em;
+  visibility: hidden;
+
+  margin-left: 10px;
+}
+
+span.erro.visivel {
+  visibility: visible;
+}
+
+
+/* Estilo para tabela */
+#tabelaCadastros {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+  }
+  
+  #tabelaCadastros thead tr {
+    background-color: #f8f9fa;
+  }
+  
+  #tabelaCadastros th, #tabelaCadastros td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  #tabelaCadastros tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #tabelaCadastros tbody tr:hover {
+    background-color: #e9ecef;
+  }
+  

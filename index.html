@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colaboradores</title>
+    <link rel="shortcut icon" href="Sample_User_Icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Cadastro de Novo Colaborador</h1>
+    <form id="formcadastro" action="">
+      <div class="container_inputs">
+        <div class="inputs">
+          <label for="nome">Nome:</label>
+          <input id="nome" type="text" />
+          <span id="erroNome" class="erro"></span>
+        </div>
+
+        <div class="inputs">
+          <label for="idade">Idade:</label>
+          <input id="idade" type="number" />
+          <span id="erroIdade" class="erro"></span>
+        </div>
+
+        <div class="inputs">
+          <label for="funcao">Função:</label>
+          <input id="funcao" type="text" />
+          <span id="erroFuncao" class="erro"></span>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button type="button" id="btnSubmit" onclick="salvar()">Salvar</button>
+        <button type="button" id="btnLimpar" onclick="limpar()">Limpar</button>
+      </div>
+    </form>
+
+    <h2>Lista de Cadastros</h2>
+    
+    <table id="tabelaCadastros">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Função</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+
+
+    <div id="popupConfirmacao" class="popup" style="display: none">
+      <div class="popup-content">
+        <p id="popupMessage">
+          Tem certeza que deseja excluir este colaborador?
+        </p>
+        <button id="btnConfirmar" class="btnConfirmar">Confirmar</button>
+        <button id="btnCancelar" class="btnCancelar redButton">Cancelar</button>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
